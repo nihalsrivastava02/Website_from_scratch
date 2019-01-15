@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A simple template for practise purpose">
+        <meta name="author" content="NIKHIL">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web Template</title>
+        <link href="index.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="glitch.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="contain">
+                <div id="branding">
+                        <img  class="headerimage" src="C:\Users\NIKHIL KUMAR\Desktop\glitch\logo_html.png">
+                    <!--<figcaption style="font-family: sans-serif;">Interdisciplinary engineering conferences</figcaption>-->
+                </div>
+                <nav>
+                    <ul>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="window.location.href='file:///C:/Users/NIKHIL%20KUMAR/Desktop/glitch/index-1.html.htm'">Home</button>
+                        </div>
+                        <div class="dropdown">    
+                            <button class="dropbtn" href="#">Conferences</button>
+                            <div class="dropdown-content">
+                                <a href="#">Computer science engineering</a>
+                                <a href="#">Mechanical engineering</a>
+                                <a href="#">Civil engineering</a>
+                                <a href="#">Electrical engineering</a>
+                                <a href="#">Biotechnological engineering</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">    
+                            <button class="dropbtn" href="#">Information</button>
+                            <div class="dropdown-content">
+                                <a href="file:///C:/Users/NIKHIL%20KUMAR/Desktop/glitch/updateprofile.html">Update your profile</a>
+                                <a href="#">For presenters</a>
+                            </div>
+                        </div> 
+                        <div class="dropdown">   
+                            <button class="dropbtn" href="#">Personnel</button>
+                            <div class="dropdown-content">
+                                <a href="#">Staff members</a>
+                                <a href="#">Officer</a>
+                                <a href="#">Board members</a>
+                            </div>   
+                        </div>    
+                        <div class="dropdown">    
+                            <button class="dropbtn" href="#">Past conferences</button>
+                            <div class="dropdown-content">
+                                <a href="#">2018 CONFERENCES</a>
+                                <a href="#">2017 CONFERENCES</a>
+                                <a href="#">2016 CONFERENCES</a>
+                            </div>
+                        </div> 
+                        <div class="dropdown">   
+                            <button class="dropbtn" href="#">Archieves</button>
+                        </div>   
+                        <div class="dropdown">     
+                            <button class="dropbtn" type="button">About</button>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="showcase">
+            <div class="container">
+                <div class="boxcontent">
+                    <p style="height:10px;">Testimonials</p>
+                    <hr>
+                    <div>
+                        <div class="w3-content w3-section" style="max-width:500px">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="C:\Users\NIKHIL KUMAR\Desktop\glitch\Capture1.png" style="width:100%">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="C:\Users\NIKHIL KUMAR\Desktop\glitch\Capture2.png" style="width:100%">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="C:\Users\NIKHIL KUMAR\Desktop\glitch\Capture3.png" style="width:100%">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="C:\Users\NIKHIL KUMAR\Desktop\glitch\Capture4.png" style="width:100%">
+                        </div> 
+                    </div> 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+                </div> 
+                <div > 
+                <h3>For presenters</h3>
+                <ul style="list-style-type: none;">
+                    <li><a href="#">Tips for Better Generated Slide Presentation</a> </li>
+                    <li><a href="#">Additional Tips for Oral Presenters</a></li> 
+                    <li><a href="#">Guidelines for Preparing Posters</a></li> 
+                </ul>
+                </div>    
+        </section>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe to our newsletter</h1>
+                <form>
+                    <input type="email" placeholder="someone@gmail.com">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <h3>Html5</h3>
+                    <img src="img/logo_html.png">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="box">
+                    <h3>Css3</h3>
+                    <img src="img/logo_css.png">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="box">
+                    <h3>Graphics</h3>
+                    <img src="img/logo_brush.png">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Web designig services, Copyright &copy;2018</p>
+        </footer>
+    </body>
+</html>

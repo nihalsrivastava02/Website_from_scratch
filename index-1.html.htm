@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A simple template for practise purpose">
+        <meta name="author" content="NIKHIL">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Engineering Conference</title>
+        <link href="index.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="hlitch.js"></script>
+    </head>
+    
+    <body>
+    <div class="header" id="myHeader">    
+        <header>
+            <div class="contain">
+                <div id="branding">
+                        <img  class="headerimage" src="Capture.png">
+                        <input type="text" name="search" placeholder="Search.." id='search'>
+                    <!--<figcaption style="font-family: sans-serif;">Interdisciplinary engineering conferences</figcaption>-->
+                </div>
+                <nav>
+                    <ul>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="window.location.href='file:///C:/Users/NIKHIL%20KUMAR/Desktop/glitch/index-1.html.htm'">Home</button>
+                        </div>
+                        <div class="dropdown">    
+                            <button class="dropbtn" href="#">Conferences</button>
+                            <div class="dropdown-content">
+                                <a href="#">Computer science engineering</a>
+                                <a href="#">Mechanical engineering</a>
+                                <a href="#">Civil engineering</a>
+                                <a href="#">Electrical engineering</a>
+                                <a href="#">Biotechnological engineering</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">    
+                            <button class="dropbtn" href="#">Information</button>
+                            <div class="dropdown-content">
+                                <a href="file:///C:/Users/NIKHIL%20KUMAR/Desktop/glitch/updateprofile.html">Update your profile</a>
+                                <a href="file:///C:/Users/NIKHIL%20KUMAR/Desktop/glitch/forpresenters.html">For presenters</a>
+                            </div>
+                        </div> 
+                        <div class="dropdown">   
+                            <button class="dropbtn" href="#">Personnel</button>
+                            <div class="dropdown-content">
+                                <a href="#">Staff members</a>
+                                <a href="#">Officer</a>
+                                <a href="#">Board members</a>
+                            </div>   
+                        </div>    
+                        <div class="dropdown">    
+                            <button class="dropbtn" href="#">Past conferences</button>
+                            <div class="dropdown-content">
+                                <a href="#">2018 CONFERENCES</a>
+                                <a href="#">2017 CONFERENCES</a>
+                                <a href="#">2016 CONFERENCES</a>
+                            </div>
+                        </div> 
+                        <div class="dropdown">   
+                            <button class="dropbtn" href="#">Archieves</button>
+                        </div>   
+                        <div class="dropdown">     
+                            <button class="dropbtn" type="button" onclick="scrollWin(0, 1000)">About</button>
+                            <script>
+                            function scrollWin(x, y) {
+                                window.scrollBy(x, y);
+                            }
+                            </script>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="document.getElementById('id03').style.display='block'">Help</button>
+                                <div id="id03" class="modal" >
+                                    <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close">&times;</span>
+                                    <form class="modal-content animate" action="/action_page.php">
+                                        <div class="imgcontainer">
+                                        
+                                        <img src="logo_html.png" alt="LOGO" class="avatar">
+                                        </div>
+
+                                        <div class="cont">
+                                            <input type="text" placeholder="your name"  required>
+                                            <input type="email" placeholder="your email" required>
+                                            <input type="text" placeholder="your query" required>
+                                        </div>
+
+                                        <div class="cont" style="background-color:#f1f1f1">
+                                            <button id="button1" type="submit" class="loginbtn">Submit</button>
+                                            <button id="button1" type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel
+                                            </button>
+                                        </div>
+                                    </form>    
+                                </div>
+                                    <script>
+                                        // Get the modal
+                                        var modal = document.getElementById('id03');
+
+                                        // When the user clicks anywhere outside of the modal, close it
+                                        window.onclick = function(event) {
+                                        if (event.target == modal) {
+                                        modal.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+    </div>
+    <div id="loginForm" class="modal">
+            <form class="modal-content animate" action="login.php" method="POST">
+                <div class="logincontainer">
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" class="inp" id="email" placeholder="Enter Email" required>
+                    <br>
+                    <label for="password" >Password : </label>
+                    <input type="password" placeholder="Enter Password" name="password" class="inp" id="password" required> 
+                    <br>
+                    <input type="submit" id="sub" name="submitbtn">
+                </div>
+            </form>
+        </div>
+
+        
+                                            <script>
+                                        window.onscroll = function() {myFunction()};
+
+                                            // Get the header
+                                            var header = document.getElementById("myHeader");
+
+                                            // Get the offset position of the navbar
+                                            var sticky = header.offsetTop;
+
+                                            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                                            function myFunction() {
+                                              if (window.pageYOffset > sticky) {
+                                                header.classList.add("sticky");
+                                              } else {
+                                                header.classList.remove("sticky");
+                                              }
+                                            }
+                                        </script>                                        
+        <section id="showcase">            
+            <div class="container">
+                <video autoplay muted loop style="width: 100%;">
+                    <source src="The Power of Computer Science - YouTube.MP4" type="video/mp4">
+                </video>
+
+                <div class="content">
+
+                <div class="boxcontent">
+                    <p style="height:10px;">Testimonials</p>
+                    <hr>
+                    <div>
+                        <div class="w3-content w3-section" style="max-width:500px">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="Capture1.png" style="width:100%">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="Capture2.png" style="width:100%">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="Capture3.png" style="width:100%">
+                          <img class="mySlides w3-animate-fading imgtestimonial" src="Capture4.png" style="width:100%">
+                        </div> 
+                    </div> 
+                                    <script>
+                                    var myIndex = 0;
+                                    carousel();
+
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides");
+                                        for (i = 0; i < x.length; i++) {
+                                           x[i].style.display = "none";  
+                                        }
+                                        myIndex++;
+                                        if (myIndex > x.length) {myIndex = 1}    
+                                        x[myIndex-1].style.display = "block";  
+                                        setTimeout(carousel, 9000);    
+                                    }
+                                    </script>
+                </div>  
+                <h1>Engineering Conference</h1>
+
+                </div>
+
+            </div>    
+        </section>        
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe to our newsletter</h1>
+                <form>
+                    <input type="email" placeholder="someone@gmail.com" required>
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <fieldset style="border-radius:10px; box-shadow: 2px 2px 2px 2px #888888;">
+                        <legend style="border:1px solid black;background-color:black;color:white; padding: 10px;">Upcoming Conferences</legend>
+                        <h3>Activities</h3>
+                        <marquee direction="up" onmouseover="stop()" onmouseout="start()" scroll="delay">
+                            <li><a href="#" style="text-decoration: none;">ISSRD - Asian Conference on Recent Advances in Science, Engineering and Technology (ACRASET)</a></li>
+                            <li><a href="#" style="text-decoration: none;">ISSRD - International Conference on Communication, Electronics and Electrical Engineering (ICCEEE)</a></li>
+                            <li><a href="#" style="text-decoration: none;">ISSRD - International Conference on Mechanical, Manufacturing, Industrial and Civil Engineering (ICMMICE)</a><br><br></li><br>
+                            
+                        </marquee>
+                    </fieldset>
+                </div>
+                <div class="box" >
+                    <fieldset style="border-radius:10px;box-shadow: 2px 2px 2px 2px #888888;">
+                        <legend style="border:1px solid black;background-color:black;color:white; padding: 10px;">Research Activity</legend>
+                        <h3>Activities</h3>
+                        <marquee direction="up" onmouseover="stop()" onmouseout="start()" scroll="delay">
+                            <li><a href="#" style="text-decoration: none;">Deep learning from iris recognisation</a></li>
+                            <li><a href="#" style="text-decoration: none;">A secure and compatible architecture for IoT solutions</a></li>
+                            <li><a href="#" style="text-decoration: none;">Machine learning-based process models</a></li>
+                            <li><a href="#" style="text-decoration: none;">HTC Vive (VR) mixed reality kitchen training framework</a></li>
+                            <li><a href="#" style="text-decoration: none;">Triplet energy transfer in organic solar cells</a></li>
+                            <li><a href="#" style="text-decoration: none;">Tank commander mixed reality game</a></li>
+                            <li><a href="#" style="text-decoration: none;">Responsible process mining</a></li><br>
+                        </marquee>
+                    </fieldset>
+                </div>
+                <div class="box">
+                    <fieldset style="border-radius:10px;box-shadow: 2px 2px 2px 2px #888888;" >
+                        <legend style="border:1px solid black;background-color:black;color:white; padding: 10px;">Live conferences</legend>
+                        <h3>Activities</h3>
+                        <marquee direction="up" onmouseover="stop()" onmouseout="start()" scroll="delay">
+                            <li><a href="#" style="text-decoration: none;">IRF-International Conference on Civil, Mechanical, Biological and Medical Engineering (ICMBME - 2018) </a></li>
+                            <li><a href="#" style="text-decoration: none;"> ITR - International Conference on Mechanical And Production Engineering(ICMPE) </a></li>
+                            <li><a href="#" style="text-decoration: none;"> ITR - International Conference on Advanced Computer Science and Information Technology(ICACSIT) </a></li>
+                            <li><a href="#" style="text-decoration: none;"> ACN- International Conference on Medical and Health Sciences (ICMHS) </a></li>
+                        </marquee>
+                    </fieldset>    
+                </div>
+            </div>          
+        </section>               
+        <footer>
+                 
+            <p style="font-size: 120%;">Developed by 
+                <a style="text-decoration:none;" target="-blank" href="http://www.teamx.dx.am">Team X</a></p>
+
+        </footer>        
+    </body>
+</html>

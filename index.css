@@ -1,0 +1,457 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/*Global*/
+.container{
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+.contain{
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    
+}
+.button_1{
+    height:38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0px 20px;
+    color: #ffffff;
+}
+/*Header*/
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: 3px solid #e8491d;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0px 5px;
+    margin-right: 0px: 
+}
+header li button{
+    display: block;
+}
+header #branding{
+    float: left;
+    
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 0px;
+}
+header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+/*Showcase*/
+#showcase{
+    min-height: 400px;
+    background: none;
+    text-align: center;
+    color: grey;
+}
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/*Boxes*/
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+
+}
+#boxes .box img{
+    width: 90px;
+}
+aside #sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+article#main-col{
+    float: left;
+    width: 65%;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+/*Media */
+@media(max-width:768px){
+    header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.headerimage{
+    margin-top: 0px;
+    width: 50px;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.dropbtn {
+    background-color: #35424a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    
+}
+
+#mydivheader {
+    padding: 30px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+    border: 2px solid #d3d3d3;
+    border-radius:100%;
+}
+.boxcontent{
+    display: block;
+    border:2px solid black;
+    width: 12%;
+    height: 400px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom:10px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    border-radius:10px;
+
+}
+.box:hover{
+
+}
+hr{
+    border:2px solid grey;
+}
+.imgtestimonial{
+    overflow: hidden;
+    height: 300px;
+}
+
+.w3-content{max-width:980px;margin:auto;}
+.w3-section{margin-top:16px!important;margin-bottom:16px!important}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.6;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+  width: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+/* Page content */
+.content {
+  padding: 0px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+#form{
+            border:1px solid blue ;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px; 
+            box-shadow: 2px 2px 2px 2px;
+
+        }
+        label{
+            color: blue;
+            font-size: 120%;
+        }
+        img{
+            margin-top: 50px;
+            width: 300px;
+            height: 100px;
+        }
+}
+ .cont {
+    padding: 14px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 0px;
+    border-radius: 0px;
+
+}
+
+input[type=text], input[type=email]{
+    width: 96%;
+    padding: 16px;
+    margin: 15px 0px 22px 0px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-size: 100%;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,  input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+#button1 {
+    background-color:  #e8491d;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 108%;
+}
+
+#button1:hover {
+    opacity:0.8;
+}
+.cancelbtn{
+  float: right;
+  width: 50%;
+}
+.loginbtn{
+  float: left;
+  width: 50%;
+}
+
+#search {
+    width: 180px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: none;
+    background-image: url("C:\Users\NIKHIL KUMAR\Desktop\glitch\search-icon-png-2.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom: 2px;
+    position: relative;
+    top:-10px;
+    left: 30px;
+}
